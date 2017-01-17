@@ -19,6 +19,12 @@
     <%= @course.description %>
   </div>
 
+<br />
+  <div class="course_image">
+    <%= image_tag @course.image, class: 'img-responsive center-block'%>
+  </div>
+  <br />
+
   <div class="col-xs-12">
     <% @course.sections.each do |section| %>
       <div class="section">
